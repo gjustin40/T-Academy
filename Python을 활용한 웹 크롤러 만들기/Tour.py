@@ -4,13 +4,15 @@ class TourInfo:
     # 멤버변수(실제 컬럼보다는 작게 셋팅)
     title = ''
     price = ''
-    area = ''
+    date = ''
     link = ''
     img = ''
+    contents = ''
     # 생성자
-    def __init__(self, title, price, date, link, img):
+    def __init__(self, title, price, date, link, img, contents=None):
         self.title = title
         self.price = price
         self.date = date
         self.link = link
         self.img = img
+        self.contents = contents
